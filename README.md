@@ -6,4 +6,15 @@ Access:
 ```
 git clone https://github.com/t3mpura/notes.git
 ```
-I reccomend opening the files via Obsidian. If operating from Pwnbox, opening via GUI and LibreOffice is preferable to vim for legibility.
+
+Unarchive the tar files:
+```
+tar -xf <file>.tar
+```
+
+I reccomend opening the files via Obsidian. If operating from Pwnbox, opening via GUI and LibreOffice is preferable to Vim for legibility.
+
+Use the template file (or AD template if active directory is involved) as a checklist while going through a box.
+Use the master file for more in depth notes if not quite understanding something in the template file.
+notes.tar is an archive of a bunch of random stuff including footprinting, privesc, tools, etc... Use mainly for reference.
+Reference cheat sheets for quick one-liners ie: file_transfer, reverse_shells, etc...
