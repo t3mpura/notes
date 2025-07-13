@@ -1,36 +1,26 @@
 ## Reconnaissance
 
-```
-# TCP
-
-# Initial Scan
-sudo nmap <ip> -sV -sC -sT -p- -oN ~/proving_grounds/<standalone>_TCP
-
-# Deep Scan
-sudo nmap <ip> -A -p<ports> -oN ~/proving_grounds/<standalone>_TCP_ALL
-```
-
-```
-# UDP
-
-# Initial Scan
-sudo nmap <ip> -sU --top-ports=100 -oN ~/proving_grounds/<standalone>_UDP
+#### TCP
+Initial Scan
+`sudo nmap <ip> -sC -sT -sV -p<ports> -oN ~/<box>_TCP`
 
 
-# Deep Scan
-sudo nmap <ip> -sU -A -p<ports> -oN ~/proving_grounds/<standalone>_UDP_ALL
-```
+Deep Scan
+`sudo nmap <ip> -A -p<ports> -oN ~/<box>_TCP_ALL`
 
-```
-# Autorecon
+#### UDP
+Initial Scan
+`sudo nmap <ip> -sU --top-ports=100 -oN ~/<box>_UDP`
 
-sudo env "PATH=$PATH" autorecon <ip_address>
-```
 
-```
-# Nikto
-nikto -host <ip_address>
-```
+Deep Scan
+`sudo nmap <ip> -sU -A -p<ports> -oN ~/<box>_UDP_ALL`
+
+#### Autorecon
+`sudo env "PATH=$PATH" autorecon <ip_address>`
+
+#### Nikto
+`nikto -host <ip_address>`
 
 
 ## Footprinting
