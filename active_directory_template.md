@@ -4,22 +4,22 @@ If we add a host to /etc/hosts, RESCAN
 ```
 #### TCP
 Initial Scan
-`sudo nmap <ip> -sC -sT -sV -p<ports> -oN ~/proving_grounds/<standalone>/<standalone>_TCP_ALL`
+`sudo nmap <ip> -sC -sT -sV -p<ports> -oN ~/<box>_TCP`
 
 
 Deep Scan
-`sudo nmap <ip> -A -p<ports> -oN ~/proving_grounds/<standalone>/<standalone>_TCP_ALL`
+`sudo nmap <ip> -A -p<ports> -oN ~/<box>_TCP_ALL`
 
 #### UDP
 Initial Scan
-`sudo nmap <ip> -sU --top-ports=100 -oN ~/proving_grounds/<standalone>/<standalone>_UDP`
+`sudo nmap <ip> -sU --top-ports=100 -oN ~/<box>_UDP`
 
 
 Deep Scan
-`sudo nmap <ip> -sU -A -p<ports> -oN ~/proving_grounds/<standalone>/<standalone>_UDP_ALL`
+`sudo nmap <ip> -sU -A -p<ports> -oN ~/<box>_UDP_ALL`
 
 #### Autorecon
-`sudo env "PATH=$PATH" autorecon <ip_address>
+`sudo env "PATH=$PATH" autorecon <ip_address>`
 
 #### Nikto
 `nikto -host <ip_address>`
